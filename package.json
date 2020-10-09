@@ -1,0 +1,26 @@
+{
+  "name": "fc-fe-workflow-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node ./bin/module-install",
+    "build:changelog": "conventional-changelog  -i CHANGELOG.md -n config.js  -s -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banzheshenghuo/fc-FE-workFlow-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli/issues"
+  },
+  "homepage": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli#readme",
+  "devDependencies": {
+    "conventional-changelog-angular": "^5.0.11",
+    "conventional-changelog-core": "^4.2.0",
+    "cz-customizable": "^6.3.0"
+  }
+}

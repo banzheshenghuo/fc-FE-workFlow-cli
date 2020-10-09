@@ -1,0 +1,16 @@
+- {{#if scope }} **[{{scope}}](https://jira.forceclouds.com/browse/{{scope}}):** {{~else}} {{scope}}{{~/if}} 
+  {{#if subject}}
+    {{~subject}}
+  {{~else}}
+    {{~header}}
+  {{~/if}}
+
+{{~!-- commit hash --}} 
+({{~hash}})
+
+{{~!-- jira url --}} 
+{{!-- {{#if scope}} https://jira.forceclouds.com/browse/{{scope}} {{/if}} --}}
+
+
+
+
