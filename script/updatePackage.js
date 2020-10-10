@@ -14,7 +14,7 @@ const PACKAGE_CONFIG = {
 const PACKAGE_SCRIPT = {};
 
 fs.readFile(resolve(__dirname, "../../../package.json"), "utf8", (err, str) => {
-  console.log("read package.json data", str);
+  // console.log("read package.json data", str);
   const data = JSON.parse(str);
 
   // * 修改package.json config和script
