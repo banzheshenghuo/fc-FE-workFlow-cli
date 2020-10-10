@@ -1,11 +1,12 @@
 {
   "name": "fc-fe-workflow-cli",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node ./bin/module-install",
+    "publish": "npm publish --registry=http://59.110.159.14:8085/repository/npm-crm/",
     "build:changelog": "conventional-changelog  -i CHANGELOG.md -n script/generateChangelog.js  -s -r 0"
   },
   "repository": {
