@@ -10,7 +10,11 @@ const PACKAGE_CONFIG = {
   },
 };
 
-const PACKAGE_SCRIPT = {};
+const PACKAGE_SCRIPT = {
+  commit: "git-cz",
+  init-changelog:"conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 0",
+  update-changelog:"conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 2",
+};
 
 fs.readFile(resolve(__dirname, "../../../package.json"), "utf8", (err, str) => {
   // console.log("read package.json data", str);
