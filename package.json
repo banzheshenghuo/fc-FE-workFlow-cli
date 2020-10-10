@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "node ./bin/module-install",
+    "install": "npm install && node ./bin/module-install",
     "publish": "npm publish --registry=http://59.110.159.14:8085/repository/npm-crm/",
     "build:changelog": "conventional-changelog  -i CHANGELOG.md -n script/generateChangelog.js  -s -r 0"
   },
