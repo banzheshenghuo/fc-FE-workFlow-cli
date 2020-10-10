@@ -6,9 +6,8 @@ const PACKAGE_CONFIG = {
     path: "node_modules/cz-customizable",
   },
   "cz-customizable": {
-    config: "config/commitMessageConfig.js",
+    config: "node_modules/fc-fe-workflow-cli/script/commitMessageConfig.js",
   },
-  test: "test",
 };
 
 const PACKAGE_SCRIPT = {};
@@ -21,7 +20,7 @@ fs.readFile(resolve(__dirname, "../../../package.json"), "utf8", (err, str) => {
   data.config = Object.assign({}, data.config, PACKAGE_CONFIG);
 
   fs.writeFileSync(
-    resolve(__dirname, "../../../package2.json"),
+    resolve(__dirname, "../../../package.json"),
     JSON.stringify(data, "", "\t")
   );
 });

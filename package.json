@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install && node ./bin/module-install && exit 1",
+    "install": "node ./bin/module-install",
     "private-publish": "npm publish --registry=http://59.110.159.14:8085/repository/npm-crm/",
     "build:changelog": "conventional-changelog  -i CHANGELOG.md -n script/generateChangelog.js  -s -r 0"
   },
@@ -18,8 +18,11 @@
   "bugs": {
     "url": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli/issues"
   },
+  "bin": {
+    "testchangelog": "bin/testchangelog"
+  },
   "homepage": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli#readme",
-  "devDependencies": {
+  "dependencies": {
     "conventional-changelog-angular": "^5.0.11",
     "conventional-changelog-cli": "^2.1.0",
     "conventional-changelog-core": "^4.2.0",
