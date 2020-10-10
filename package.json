@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli#readme",
   "dependencies": {
+    "commitizen": "^4.2.1",
     "conventional-changelog-angular": "^5.0.11",
     "conventional-changelog-cli": "^2.1.0",
     "conventional-changelog-core": "^4.2.0",
-    "cz-customizable": "^6.3.0"
+    "cz-customizable": "^6.3.0",
+    "standard-version": "^9.0.0"
   },
   "config": {
     "commitizen": {
