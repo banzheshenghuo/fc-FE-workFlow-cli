@@ -1,6 +1,6 @@
 {
   "name": "fc-fe-workflow-cli",
-  "version": "0.0.3-alpha.6",
+  "version": "0.0.3-alpha.7",
   "description": "",
   "main": "index.js",
   "scripts": {
