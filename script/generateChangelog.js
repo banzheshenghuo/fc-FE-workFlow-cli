@@ -34,11 +34,11 @@ let writerOpts = {
       .filter((reference) => issues.indexOf(reference.issue) === -1)
       .map((reference) => formatIssue(issueUrl, reference.issue))
       .join(", ");
-    // console.log("commit==>", commit);
+
     return commit;
   },
-  // groupBy: "type",
-  // commitGroupsSort: "title",
+  groupBy: "scope",
+  // commitGroupsSort: "version",
   // commitsSort: "committerDate:",
   // commitsSort: ["scope", "subject"],
   noteGroupsSort: "title",
@@ -46,10 +46,10 @@ let writerOpts = {
 };
 
 module.exports = Q.all([
-  readFile(resolve(__dirname, "../templates/template.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "../templates/header.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "../templates/commit.hbs"), "utf-8"),
-  readFile(resolve(__dirname, "../templates/footer.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates/template.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates/header.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates/commit.hbs"), "utf-8"),
+  readFile(resolve(__dirname, "templates/footer.hbs"), "utf-8"),
   conventionalChangelogAngularPromise,
 ]).spread(function (
   template,

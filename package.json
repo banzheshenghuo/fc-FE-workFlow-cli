@@ -18,9 +18,6 @@
   "bugs": {
     "url": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli/issues"
   },
-  "bin": {
-    "testchangelog": "bin/testchangelog"
-  },
   "homepage": "https://github.com/banzheshenghuo/fc-FE-workFlow-cli#readme",
   "dependencies": {
     "commitizen": "^4.2.1",

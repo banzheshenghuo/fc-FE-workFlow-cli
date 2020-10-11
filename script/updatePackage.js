@@ -10,10 +10,14 @@ const PACKAGE_CONFIG = {
   },
 };
 
-const PACKAGE_SCRIPT = {
+const PACKAGE_SCRIPTS = {
   commit: "git-cz",
-  init-changelog:"conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 0",
-  update-changelog:"conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 2",
+  release: "standard-version",
+  prerelease: "standard-version --prerelease alpha && npm run init-changelog",
+  "init-changelog":
+    "conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 0",
+  "update-changelog":
+    "conventional-changelog  -i CHANGELOG.md -n node_modules/fc-fe-workflow-cli/script/generateChangelog.js  -s -r 2",
 };
 
 fs.readFile(resolve(__dirname, "../../../package.json"), "utf8", (err, str) => {
@@ -22,6 +26,7 @@ fs.readFile(resolve(__dirname, "../../../package.json"), "utf8", (err, str) => {
 
   // * 修改package.json config和script
   data.config = Object.assign({}, data.config, PACKAGE_CONFIG);
+  data.scripts = Object.assign({}, data.scripts, PACKAGE_SCRIPTS);
 
   fs.writeFileSync(
     resolve(__dirname, "../../../package.json"),

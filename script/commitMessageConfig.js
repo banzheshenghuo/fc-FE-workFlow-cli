@@ -1,16 +1,16 @@
 "use strict";
-
+// prettier-ignore
 module.exports = {
   types: [
-    { value: "feat", name: "feat:    新功能" },
-    { value: "fix", name: "fix:    Bug修复" },
-    { value: "docs", name: "docs:    文档变更" },
-    { value: "格式", name: "格式:    空格, 分号等格式修复" },
-    { value: "refactor", name: "refactor:    代码重构" },
-    { value: "optimize", name: "optimize:    代码优化" },
-    { value: "test", name: "test:    添加测试" },
-    { value: "ci", name: "ci:    开发工具变动(构建、脚手架工具等)" },
-    { value: "revert", name: "revert:    代码回退" },
+    { value: "feat",      name: "feat:      新功能" },
+    { value: "fix",       name: "fix:       Bug修复" },
+    { value: "docs",      name: "docs:      文档变更" },
+    { value: "format",    name: "format:    空格, 分号等格式修复" },
+    { value: "refactor",  name: "refactor:  代码重构" },
+    { value: "optimize",  name: "optimize:  代码优化" },
+    { value: "test",      name: "test:      添加测试" },
+    { value: "ci",        name: "ci:        开发工具变动(构建、脚手架工具等)" },
+    { value: "revert",    name: "revert:    代码回退" },
   ],
 
   // scopes: [
