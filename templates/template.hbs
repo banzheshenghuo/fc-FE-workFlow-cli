@@ -1,4 +1,3 @@
-
 {{> header}}
 
 {{#each commitGroups}}
@@ -8,7 +7,7 @@
 
 {{/if}}
 {{#each commits}}
-{{log 'this' this}}
+{{!-- {{log 'this' this}} --}}
 {{> commit root=@root}}
 {{/each}}
 
