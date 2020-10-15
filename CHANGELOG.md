@@ -1,8 +1,11 @@
-# Changelog
+## 1.0.3 (2020-10-15)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+### [crm-1](https://jira.forceclouds.com/browse/)
 
-### [1.0.3](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.0.2...v1.0.3) (2020-10-15)
+- 调整CHANGELOG样式,为markdown稳定版[(89eb55b)](https://gitlab.forceclouds.com/mobile/mobile-crm/commit/89eb55b)
+
+
+
 
 ## 1.0.2 (2020-10-14)
 
