@@ -1,13 +1,6 @@
-{{!-- - {{#if scope }} **[{{scope}}](https://jira.forceclouds.com/browse/{{scope}}):** {{~else}} {{scope}}{{~/if}}  --}}
-- {{#if subject}}
-    [{{~subject}}](https://jira.forceclouds.com/browse/{{scope}})
-  {{~else}}
-    {{~header}}
-  {{~/if}}
-
+- {{subject}}
 {{~!-- commit hash --}} 
-({{~hash}})
-{{!-- [({{~hash}})](https://gitlab.forceclouds.com/mobile/mobile-crm/commit/{{hash}}) --}}
+[({{~hash}})](https://gitlab.forceclouds.com/mobile/mobile-crm/commit/{{hash}})
 
 {{~!-- jira url --}} 
 {{!-- {{#if scope}} https://jira.forceclouds.com/browse/{{scope}} {{/if}} --}}
