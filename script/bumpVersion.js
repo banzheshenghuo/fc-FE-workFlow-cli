@@ -9,6 +9,11 @@ const QUESTION_DEFAULT = [
     message: "是否升级版本号？"
   },
   {
+    name: "prefix",
+    type: "input",
+    message: "请输入tag前缀（选填）"
+  },
+  {
     type: "list",
     name: "versionType",
     message: "请选择升级版本类型",
@@ -57,34 +62,40 @@ function customFillVersion(params) {
 }
 
 function execShell(params) {
-  console.log("params==>", params);
-  let cmd;
+  let cmdWithVersion;
+  const tagPrefix = params.prefix ? `-t ${params.prefix}` : "";
   // * 自定义版本号
   if (params.customVersion) {
-    cmd = `--release-as ${params.customVersions}`;
+    cmdWithVersion = `--release-as ${params.customVersions}`;
   }
 
   switch (params.versionType) {
     case "alpha":
-      cmd = "--prerelease alpha";
+      cmdWithVersion = "--prerelease alpha";
       break;
     case "patch":
-      cmd = "--release";
+      cmdWithVersion = "--release";
       break;
     case "minor":
-      cmd = "--release minor";
+      cmdWithVersion = "--release minor";
       break;
     default:
       break;
   }
 
-  if (!cmd) {
+  if (!cmdWithVersion) {
     console.error("版本类型错误");
     return;
   }
 
-  cp.exec(`standard-version ${cmd}`, (error, stdout, stderr) => {
-    console.log("stdout", stdout);
+  const cmd = `standard-version  ${cmdWithVersion} ${tagPrefix} --no-verify`;
+
+  cp.exec(cmd, (error, stdout, stderr) => {
+    if (error) {
+      console.log("操作失败");
+    } else {
+      console.log("操作成功");
+    }
   });
 }
 
