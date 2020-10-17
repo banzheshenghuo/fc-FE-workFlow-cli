@@ -1,41 +1,17 @@
-# Changelog
+## 1.4.1-alpha.3 (2020-10-17)
+## 1.4.1-alpha.2 (2020-10-17)
+## 1.4.1-alpha.1 (2020-10-17)
+## 1.4.1-alpha.0 (2020-10-17)
+## 1.2.1 (2020-10-17)
+## 1.2.0 (2020-10-17)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+### [crm-22](https://jira.forceclouds.com/browse/)
 
-### [1.4.1-alpha.1](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.4.1-alpha.0...v1.4.1-alpha.1) (2020-10-17)
-
-### [1.4.1-alpha.0](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.2.1...v1.4.1-alpha.0) (2020-10-17)
-
-## [1.4.0](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.2.1...v1.4.0) (2020-10-17)
-
-### [1.3.1](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.2.1...v1.3.1) (2020-10-17)
-
-## [1.3.0](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/stg1.3.0-0...stg1.3.0) (2020-10-17)
-
-## 1.3.0-0 (2020-10-17)
+- 更新CHANGELOG[(9d8c522)](https://gitlab.forceclouds.com/mobile/mobile-crm/commit/9d8c522)
 
 
-### Features
-
-* 添加版本升级脚本 ([1446259](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/commit/14462593f4b9992ea3fce284b8b638356762e92a))
-
-### [1.2.1](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.2.0...v1.2.1) (2020-10-17)
-
-## [1.2.0](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.0.2...v1.2.0) (2020-10-17)
 
 
-### Features
-
-* 添加版本升级脚本 ([1446259](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/commit/14462593f4b9992ea3fce284b8b638356762e92a))
-
-## [1.1.0](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/compare/v1.0.2...v1.1.0) (2020-10-17)
-
-
-### Features
-
-* 添加版本升级脚本 ([1446259](https://github.com/banzheshenghuo/fc-FE-workFlow-cli/commit/14462593f4b9992ea3fce284b8b638356762e92a))
-
-## 1.0.3 (2020-10-15)
 
 ### [crm-1](https://jira.forceclouds.com/browse/)
 
@@ -53,12 +29,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
-## 1.0.1 (2020-10-11)
-## 0.0.3-alpha.7 (2020-10-10)
-## 0.0.3-alpha.6 (2020-10-10)
-## 0.0.3-alpha.5 (2020-10-10)
-## 0.0.3-alpha.4 (2020-10-10)
-## 0.0.3-alpha.3 (2020-10-10)
 
 ### [crm-11](https://jira.forceclouds.com/browse/)
 
@@ -67,9 +37,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
-## 0.0.3-alpha.2 (2020-10-10)
-## 0.0.3-alpha.1 (2020-10-10)
-## 0.0.3-alpha.0 (2020-10-10)
 
 ### [crm-2346](https://jira.forceclouds.com/browse/)
 
@@ -86,4 +53,3 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
-## 0.0.2-alpha.1 (2020-10-10)
