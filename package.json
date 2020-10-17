@@ -37,9 +37,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
   },
-  "standard-version": {
-    "scripts": {
-      "postchangelog": "npm run build:changelog"
-    }
+  "bin":{
+    "generate-changelog":"./bin/generate-changelog"
   }
 }

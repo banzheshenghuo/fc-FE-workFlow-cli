@@ -1,0 +1,2 @@
+#!/bin/bash
+conventional-changelog  -i CHANGELOG.md -n ../script/generateChangelog.js  -s -r 0
