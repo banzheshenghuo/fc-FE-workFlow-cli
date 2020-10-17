@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install":"node ./bin/module-install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bump": "node script/bumpVersion.js",
     "commit": "git-cz",
@@ -36,8 +37,5 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
-  },
-  "bin": {
-    "generate-changelog": "./bin/generate-changelog"
   }
 }
