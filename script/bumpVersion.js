@@ -30,6 +30,10 @@ const QUESTION_DEFAULT = [
         name: "次版本号（兼容升级）",
         value: "minor"
       },
+      {
+        name: "主版本号（非兼容升级）",
+        value: "major"
+      },
       new inquirer.Separator(),
       {
         name: "自定义版本号",
@@ -74,10 +78,13 @@ function execShell(params) {
       cmdWithVersion = "--prerelease alpha";
       break;
     case "patch":
-      cmdWithVersion = "--release";
+      cmdWithVersion = "--release-as patch";
       break;
     case "minor":
-      cmdWithVersion = "--release minor";
+      cmdWithVersion = "--release-as minor";
+      break;
+    case "major":
+      cmdWithVersion = "--release-as major";
       break;
     default:
       break;
@@ -89,13 +96,9 @@ function execShell(params) {
   }
 
   const cmd = `standard-version  ${cmdWithVersion} ${tagPrefix} --no-verify`;
-
+  console.log(cmd);
   cp.exec(cmd, (error, stdout, stderr) => {
-    if (error) {
-      console.log("操作失败");
-    } else {
-      console.log("操作成功");
-    }
+    console.log("操作成功");
   });
 }
 
