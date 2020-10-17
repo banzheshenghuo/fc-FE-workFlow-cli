@@ -1,6 +1,6 @@
 {
   "name": "fc-fe-workflow-cli",
-  "version": "1.4.1-alpha.1",
+  "version": "1.4.1-alpha.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,14 +32,14 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    },
-    "standard-version": {
-      "skip": {
-        "changelog": true
-      }
     }
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true
+    }
   }
 }
